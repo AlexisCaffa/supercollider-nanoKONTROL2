@@ -85,8 +85,8 @@ MIDIClient.init;
 // MIDIFunc.trace;
 MIDIIn.connectAll;
 
-~nK2srcID = MIDIIn.findPort("nanoKONTROL2-nanoKONTROL2 MIDI 1","nanoKONTROL2-nanoKONTROL2 MIDI 1").uid;
-~nK2MIDIOut = MIDIOut.newByName("nanoKONTROL2-nanoKONTROL2 MIDI 1","nanoKONTROL2-nanoKONTROL2 MIDI 1");
+~nK2srcID = MIDIIn.findPort("nanoKONTROL2","nanoKONTROL2 MIDI 1").uid;
+~nK2MIDIOut = MIDIOut.newByName("nanoKONTROL2","nanoKONTROL2 MIDI 1");
 ~nk2OutPort = 0;
 
 MIDIOut.connect(~nk2OutPort,~nK2MIDIOut.port);
